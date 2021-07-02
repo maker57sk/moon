@@ -1,13 +1,8 @@
 # Import all modules
-import references
 from cheetsheets import pdcheet
-import formscol
-import projects
-import ideas
-import kitchenSink
+from Layouts import formscol, projects, ideas, kitchenSink, references
 import streamlit as st
-from pyforest import *
-
+# from pyforest import *
 
 # Title and headers
 st.title('AIML UAE')
@@ -24,7 +19,6 @@ PAGES = {
     "Cheetsheets": pdcheet,
     "References": references
 }
-
 
 # Navigation to work 
 selection = st.sidebar.radio("Go To", list(PAGES.keys()) )
