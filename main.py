@@ -1,6 +1,7 @@
 # Import all modules
 from cheetsheets import pdcheet
 from Layouts import formscol, projects, ideas, kitchenSink, references
+from Projects import home
 import streamlit as st
 # from pyforest import *
 
@@ -17,7 +18,8 @@ PAGES = {
     "Kitchen Sink" : kitchenSink,
     "Forms" : formscol,
     "Cheetsheets": pdcheet,
-    "References": references
+    "References": references,
+    "Projects-Home":home
 }
 
 # Navigation to work 

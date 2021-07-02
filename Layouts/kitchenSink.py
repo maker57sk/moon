@@ -42,3 +42,6 @@ def app():
         submitted = st.form_submit_button('Submit')
 
                           ##################################################################################         
+    
+    
+    st.write('[minicog.ai](https://minicog.ai)')
