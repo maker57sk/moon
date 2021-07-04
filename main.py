@@ -1,8 +1,12 @@
 # Import all modules
+import streamlit as st
+
 from cheetsheets import pdcheet
 from Layouts import formscol, projects, ideas, kitchenSink, references, video
-from Projects import home
-import streamlit as st
+from Projects import home, editor
+from Projects.DubaiBynat import dubaiBy
+from Projects.Awsome import one
+
 # from pyforest import *
 
 # Title and headers
@@ -20,10 +24,15 @@ PAGES = {
     "Cheetsheets": pdcheet,
     "References": references,
     "Projects-Home":home,
-    "Video": video
+    "Video": video,
+    "Dubai": dubaiBy,
+    "Editor": editor,
+    "Awsome": one
+
 }
 
 # Navigation to work 
 selection = st.sidebar.radio("Go To", list(PAGES.keys()) )
 page = PAGES[selection]
 page.app()
+

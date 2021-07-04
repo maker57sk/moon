@@ -5,6 +5,9 @@ import streamlit as st
 # Create App function
 def app():
 
+
+    st.sidebar.selectbox('Choose',[1,2,3,4])
+
     # layout columns initialize
     projects, github = st.beta_columns(2)
     left, right = st.beta_columns(2)
